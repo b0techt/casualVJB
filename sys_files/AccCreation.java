@@ -17,8 +17,8 @@ public class AccCreation {
 	static void account_making() {
 		try {
 			System.out.println();
-			System.out.println("Welcome to the Java Account Registry Page");
-			System.out.println("Please fill in details");
+			System.out.println("Welcome to the Java Account Registry Page. ");
+			System.out.println("Please fill in your details.");
 
 			System.out.print("First name: ");
 			firstname = Main.scan.nextLine();
@@ -38,9 +38,9 @@ public class AccCreation {
 
 			idName = firstname.substring(0, 1).toUpperCase() + surname;
 
-			System.out.println("Thank you for entering your details");
+			System.out.println("Thank you for entering your details. ");
 			System.out.println(
-					"We will now process your details and make your account with your given account number, \r\nPIN, card number and security number");
+					"We will now process your details and make your account with your given Account Number, \r\nPIN Number, Card Number and Security Number");
 			System.out.println("Please wait");
 			System.out.println();
 			System.out.println("...");

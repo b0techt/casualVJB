@@ -9,12 +9,13 @@ public class AccEdit {
 	static String newDeets;
 
 	static void welcome_screen() {
-		System.out.println("\nWelcome to the VJB Rectification Page");
+		System.out.println("\nWelcome to the VJB Alteration Page. \n"
+				+ "Changing your personal details does not affect your username.");
 	}
 
 	static void account_edit() {
 		conChoice = false;
-		System.out.print("\nPlease choose what personal detail you would like to edit\n" + "1. Firstname\n" + "2. Surname\n" + "3. Age\n" + "4. Main Menu\n"
+		System.out.print("\nPlease choose what personal detail you would like to edit.\n" + "1. Firstname\n" + "2. Surname\n" + "3. Age\n" + "4. Main Menu\n"
 				+ "\nEnter option: ");
 
 		op = Main.scan.nextInt();
@@ -28,15 +29,15 @@ public class AccEdit {
 
 					while (!conChoice) {
 						System.out.print(
-								"\nWould you like to confirm your choice" + "\n --> 1. Yes 2.No" + "\nEnter option: ");
+								"\nWould you like to confirm your choice." + "\n --> 1. Yes 2.No" + "\nEnter option: ");
 						confirm = Main.scan.nextInt();
 						if (confirm == 1) {
 							conChoice = true;
 							StoreConnect.editFile(op, newDeets);
-							System.out.print("Name has been updated\n");
+							System.out.print("Name has been updated.\n");
 
 							while (conChoice) {
-								System.out.print("\nContiue or Exit to Main Menu\n --> 1. Continue 2. Exit"
+								System.out.print("\nContiue or Exit to Main Menu.\n --> 1. Continue 2. Exit"
 										+ "\nEnter option: ");
 								confirm = Main.scan.nextInt();
 								if (confirm == 1) {
@@ -44,12 +45,12 @@ public class AccEdit {
 								} else if (confirm == 2) {
 									MainMenu.main_menu();
 								}else {
-									System.out.print("\nPlease enter correct option from available list!\n");
+									System.out.print("\nPlease enter correct option from available list! \n");
 								}
 							}
 
 						} else if (confirm == 2) {
-							System.out.print("\nRedirecting to Rectification Page\n");
+							System.out.print("\nRedirecting to Alteration Page. \n");
 							System.out.println("...");
 							TimeUnit.SECONDS.sleep(2);
 							System.out.println("...");
@@ -58,7 +59,7 @@ public class AccEdit {
 							TimeUnit.SECONDS.sleep(2);
 							account_edit();
 						} else {
-							System.out.print("\nPlease enter correct option from available list!\n");
+							System.out.print("\nPlease enter correct option from available list! \n");
 						}
 
 					}
@@ -69,15 +70,15 @@ public class AccEdit {
 
 					while (!conChoice) {
 						System.out.print(
-								"\nWould you like to confirm your choice" + "\n --> 1. Yes 2.No" + "\nEnter option: ");
+								"\nWould you like to confirm your choice." + "\n --> 1. Yes 2.No" + "\nEnter option: ");
 						confirm = Main.scan.nextInt();
 						if (confirm == 1) {
 							conChoice = true;
 							StoreConnect.editFile(op, newDeets);
-							System.out.print("Surname has been updated\n");
+							System.out.print("Surname has been updated. \n");
 
 							while (conChoice) {
-								System.out.print("\nContiue or Exit to Main Menu\n --> 1. Continue 2. Exit"
+								System.out.print("\nContiue or Exit to Main Menu.\n --> 1. Continue 2. Exit"
 										+ "\nEnter option: ");
 								confirm = Main.scan.nextInt();
 								if (confirm == 1) {
@@ -90,7 +91,7 @@ public class AccEdit {
 							}
 
 						} else if (confirm == 2) {
-							System.out.print("\nRedirecting to Rectification Page\n");
+							System.out.print("\nRedirecting to Alteration Page.\n");
 							System.out.println("...");
 							TimeUnit.SECONDS.sleep(2);
 							System.out.println("...");
@@ -115,7 +116,7 @@ public class AccEdit {
 						if (confirm == 1) {
 							conChoice = true;
 							StoreConnect.editFile(op, newDeets);
-							System.out.print("Age has been updated\n");
+							System.out.print("Age has been updated.\n");
 
 							while (conChoice) {
 								System.out.print("\nContiue or Exit to Main Menu\n --> 1. Continue 2. Exit"
@@ -126,12 +127,12 @@ public class AccEdit {
 								} else if (confirm == 2) {
 									MainMenu.main_menu();
 								}else {
-									System.out.print("\nPlease enter correct option from available list!\n");
+									System.out.print("\nPlease enter correct option from available list! \n");
 								}
 							}
 
 						} else if (confirm == 2) {
-							System.out.print("\nRedirecting to Rectification Page\n");
+							System.out.print("\nRedirecting to Alteration Page. \n");
 							System.out.println("...");
 							TimeUnit.SECONDS.sleep(2);
 							System.out.println("...");
@@ -140,14 +141,14 @@ public class AccEdit {
 							TimeUnit.SECONDS.sleep(2);
 							account_edit();
 						} else {
-							System.out.print("\nPlease enter correct option from available list!\n");
+							System.out.print("\nPlease enter correct option from available list! \n");
 						}
 
 					}
 					break;
 					
 				case 4:
-					System.out.print("\nRedirecting to Main Menu \n");
+					System.out.print("\nRedirecting to Main Menu. \n");
 					System.out.println("...");
 					TimeUnit.SECONDS.sleep(2);
 					System.out.println("...");
@@ -156,13 +157,13 @@ public class AccEdit {
 					TimeUnit.SECONDS.sleep(2);
 					MainMenu.main_menu();
 				default:
-					System.out.print("\nPlease enter correct option from available list!\n");
+					System.out.print("\nPlease enter correct option from available list! \n");
 					account_edit();
 				}
 			}
 
 		} catch (Exception e) {
-			System.out.print("Sorry couldn't edit chosen detail\n");
+			System.out.print("Sorry couldn't edit chosen detail. \n");
 		}
 
 	}

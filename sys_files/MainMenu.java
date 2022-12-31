@@ -12,10 +12,10 @@ public class MainMenu {
 	static void welcome_screen() {
 		if (Main.login) {
 			menuName = Main.logName;
-			System.out.println("\nWelcome " + menuName + " to the Virtual Java Bank Menu");
+			System.out.println("\nWelcome " + menuName + " to the Virtual Java Bank Menu. \n");
 		} else {
 			menuName = Main.creator.idname();
-			System.out.println("\nWelcome " + menuName + " to the Virtual Java Bank Menu\n");
+			System.out.println("\nWelcome " + menuName + " to the Virtual Java Bank Menu.\n");
 		}
 	}
 
@@ -51,7 +51,7 @@ public class MainMenu {
 					break;
 				case 4 :
 					System.out.println();
-					System.out.print("Goodbye");
+					System.out.print("Goodbye.");
 					System.exit(0);
 					break;
 				default:

@@ -39,7 +39,7 @@ public class AccBalance {
 			// Main.scan.next();
 			switch (menu) {
 			case 1:
-				System.out.println("\nHow much would you like to withdraw\n");
+				System.out.println("\nHow much would you like to withdraw.\n");
 				System.out.println("Current Balance: £" + df2.format(cBala) + "\n");
 
 				while (!access) {
@@ -47,8 +47,8 @@ public class AccBalance {
 					withdraw = Main.scan.nextDouble();
 					up = cBala - withdraw;
 					if (up < 0) {
-						System.out.println("\nINSUFFICIENT FUNDS");
-						System.out.println("Try again please\n");
+						System.out.println("\nINSUFFICIENT FUNDS.");
+						System.out.println("Try again please.\n");
 						new_balance();
 					} else {
 						access = true;
@@ -68,7 +68,7 @@ public class AccBalance {
 							System.out.print("\n");
 							MainMenu.main_menu();
 						} else {
-							System.out.print("\nPlease enter correct options");
+							System.out.print("\nPlease enter correct options.");
 						}
 					}
 				}
@@ -99,12 +99,12 @@ public class AccBalance {
 						System.out.print("\n");
 						MainMenu.main_menu();
 					} else {
-						System.out.print("\nPlease enter correct options");
+						System.out.print("\nPlease enter correct options.");
 					}
 				}
 				break;
 			case 3:
-				System.out.print("\nRedirecting to Main Menu \n");
+				System.out.print("\nRedirecting to Main Menu. \n");
 				System.out.println("...");
 				TimeUnit.SECONDS.sleep(2);
 				System.out.println("...");

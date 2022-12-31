@@ -162,7 +162,7 @@ public class StoreConnect {
 				break;
 			}
 		} catch (IOException e) {
-			System.out.print("Error occured in System redirecting to main menu");
+			System.out.print("Error occured in System redirecting to main menu.");
 
 			try {
 				System.out.println("...");

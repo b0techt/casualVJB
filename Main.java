@@ -19,7 +19,7 @@ class Main {
 
 	public static void main(String[] args) {
 		try {
-			System.out.println("Welcome to the Virtual Java Bank\n");
+			System.out.println("Welcome to the Virtual Java Bank. \n");
 
 			while (!activeMain) {
 				System.out.print("Do you have an account? Y or N: ");
@@ -37,8 +37,8 @@ class Main {
 
 						} else {
 							att++;
-							System.out.print("\nAccount does not exists\n" + "Please try again \n" + "Attempts " + att
-									+ "/3 \n\n");
+							System.out.print("\nAccount does not exists. \n" + "Please try again \n" + "Attempts " + att
+									+ "/3. \n\n");
 
 							if (att == 3) {
 								activeMain = true;
@@ -48,7 +48,7 @@ class Main {
 									if (opt1.equals("Y") || opt1.equals("y")) {
 										System.out.println();
 										System.out.println("Please wait... ");
-										System.out.println("Page is being redirected");
+										System.out.println("Page is being redirected.");
 										System.out.println();
 										System.out.println("...");
 										TimeUnit.SECONDS.sleep(2);
@@ -61,10 +61,10 @@ class Main {
 										menu.welcome_screen();
 										menu.main_menu();
 									} else if (opt1.equals("N") || opt1.equals("n")) {
-										System.out.println("\nGoodbye user");
+										System.out.println("\nGoodbye user.");
 										System.exit(0);
 									} else {
-										System.out.print("\nPlease enter a correct option \n");
+										System.out.print("\nPlease enter a correct option. \n");
 									}
 								}
 							}
@@ -82,15 +82,15 @@ class Main {
 							menu.welcome_screen();
 							menu.main_menu();
 						} else if (confirm.equals("N") || confirm.equals("n")) {
-							System.out.println("\nGoodbye user");
+							System.out.println("\nGoodbye user. ");
 							System.exit(0);
 						} else {
-							System.out.print("\nPlease enter a correct option \n");
+							System.out.print("\nPlease enter a correct option. \n");
 						}
 					}
 
 				} else {
-					System.out.print("\nPlease enter a correct option \n\n");
+					System.out.print("\nPlease enter a correct option. \n\n");
 				}
 			}
 		} catch (Exception e) {
