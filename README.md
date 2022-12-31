@@ -9,7 +9,7 @@ Fully functional and completed, it creates a text file that consists of:
     Card Number
     Security Number
     PIN
-    Balance --> in a separate file
+    (Balance --> in a separate file)
 
 Uses username to login, it's also the name of text file and will be seen in welcome message.
 
