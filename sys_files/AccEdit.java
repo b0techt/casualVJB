@@ -14,7 +14,7 @@ public class AccEdit {
 
 	static void account_edit() {
 		conChoice = false;
-		System.out.print("\nPlease choose what personal detail you would like to edit" + "1. Firstname\n" + "2. Surname\n" + "3. Age\n" + "4. Main Menu\n"
+		System.out.print("\nPlease choose what personal detail you would like to edit\n" + "1. Firstname\n" + "2. Surname\n" + "3. Age\n" + "4. Main Menu\n"
 				+ "\nEnter option: ");
 
 		op = Main.scan.nextInt();
