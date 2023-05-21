@@ -1,15 +1,21 @@
 # Casual Two way transaction
 
 Virtual Java Bank, made two years ago.
-Which really is just a two way transaction where the user can withdraw and despoit "money" into an account.
+Which really is just a two way transaction where the user can withdraw and deposit "money" into an account.
 
 Fully functional and completed, it creates a text file that consists of:
     >First name
+    >
     >Surname
+    >
     >Age
+    >
     >Card Number
+    >
     >Security Number
+    >
     >PIN
+    >
     >(Balance --> in a separate file)
 
 Uses username to login, it's also the name of text file and will be seen in welcome message.
